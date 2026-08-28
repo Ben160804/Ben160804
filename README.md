@@ -1,5 +1,5 @@
 <h1 align="center">Hey, I'm Ootso 👋</h1>
-<h3 align="center">Entering AI infrastructure from backend engineering · CSE @ B.P. Poddar Institute, Kolkata</h3>
+<h3 align="center">Backend + AI infrastructure · CSE @ B.P. Poddar Institute, Kolkata</h3>
 
 <p align="center">
   <a href="mailto:ootsodhar@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
@@ -17,11 +17,11 @@ I don't just want to *use* AI tools. I want to understand them, build with them,
 
 ---
 
-### What I'm doing right now
+### What I've done
 
-**[Bluebeaks Solutions](https://bluebeaks.com) — AI Engineer Intern** *(May 2026 - Present)*
+**[Bluebeaks Solutions](https://bluebeaks.com) — AI Engineer Intern** *(May 2026 - Aug 2026)*
 
-Building the AI layer of a resume tailoring platform. My work sits at the intersection of backend engineering and ML operations:
+Built the AI layer of a resume tailoring platform. My work sat at the intersection of backend engineering and ML operations:
 
 - Designed an **n8n pipeline** that ingests job descriptions, scores resumes against them using **Gemini LLM prompts**, and outputs tailored PDFs — processing 200+ resumes/week at 95%+ formatting accuracy
 - Built a **multi-persona drip email system** with five user segments and cron scheduling, cutting manual outreach by ~70%
@@ -31,37 +31,6 @@ Building the AI layer of a resume tailoring platform. My work sits at the inters
 - Automated ADP job-application workflows with **TaskMagic**, saving ~6 hours/week of manual work
 
 **Key realization from this role:** shipping AI features isn't about the model — it's about the pipeline around it. Data integrity, prompt guardrails, fallback logic, and observability matter more than the LLM itself.
-
----
-
-### What I'm learning
-
-I'm building a real foundation, not just calling APIs. Current focus areas:
-
-```yaml
-Math Foundations:     Linear algebra (SVD, eigendecomposition),
-                      probability (Bayesian inference, MLE/MAP),
-                      multivariate calculus (gradients, chain rule for backprop)
-
-ML Core:              Supervised learning (regression, SVMs, decision trees),
-                      bias-variance decomposition, cross-validation,
-                      precision/recall tradeoffs in production systems
-
-Deep Learning:        Feedforward networks, backpropagation (math, not just PyTorch),
-                      CNNs for vision, transformers (attention mechanism internals),
-                      positional encodings, layer norm vs batch norm
-
-MLOps / Serving:      Model serialization (ONNX, TorchScript),
-                      batch vs real-time inference, A/B testing model versions,
-                      drift detection, prompt versioning for LLM systems
-
-Systems:              Vector databases (Pinecone, Weaviate),
-                      embedding spaces and similarity search,
-                      retrieval-augmented generation (RAG) architecture,
-                      fine-tuning vs prompt engineering tradeoffs
-```
-
-**How I learn:** I don't watch tutorials and forget. I build. Every concept gets a small implementation — even if it's just a Jupyter notebook. Then I try to break it, fix it, and explain it.
 
 ---
 
