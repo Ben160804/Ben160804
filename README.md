@@ -20,11 +20,11 @@
 
 ### 🛠️ Tech Stack
 
-**Languages:** Python • JavaScript • Dart • TypeScript • SQL • Solidity • C++
+**Languages:** Python • Dart • SQL • Solidity 
 
-**Frameworks & Tools:** Flutter • FastAPI • Node.js • Firebase • Docker • Git • Linux • React
+**Frameworks & Tools:** Flutter • FastAPI • Firebase • Docker • Git • Linux 
 
-**Domains:** AI/ML • Full-Stack Dev • Security • Web3 • RPA
+**Domains:** AI/ML • Backend-Dev • Security • Web3 • RPA
 
 ---
 
