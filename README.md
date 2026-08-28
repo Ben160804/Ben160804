@@ -13,7 +13,6 @@
 - 🔭 Currently working on **AI-powered systems**, **full-stack apps**, and **security tools**
 - 💻 400+ problems solved on LeetCode
 - 🏆 SIH 2025 Finalist
-- 🎯 Targeting 10+ LPA roles in SWE / AI / Security
 - 📍 Based in Kolkata, India
 
 ---
