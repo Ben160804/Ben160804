@@ -38,14 +38,15 @@ Built the AI layer of a resume tailoring platform. My work sat at the intersecti
 
 **[Journald-Sniffer](https://github.com/Ben160804/Journald-Sniffer)** *(2025 - Present)*
 
-Linux auth event ingestion and threat detection pipeline. Reads systemd journal (facility 10 — `authpriv`), parses sudo/su/sshd sessions, classifies outcomes, and alerts on suspicious patterns:
+Linux auth event ingestion and threat detection pipeline. Reads systemd journal (facility 10 — `authpriv`), parses sudo/su/sshd sessions, classifies outcomes, escalates ambiguous ones to Groq LLM, and alerts on suspicious patterns. Exposed via FastAPI and containerized with Docker.
 
 - **Pipeline:** `ingestor.py` → `parser.py` → `llm.py` → `watchdogv2.py`
+- **API:** FastAPI with 6 endpoints — `/health`, `/ingest`, `/parse`, `/alerts`, `/sessions`, `/raw`
 - **Classification:** success / failure / suspicious / unknown via keyword matching + Groq LLM fallback for ambiguous sessions
 - **Threat detection:** brute-force (5+ failures from same IP), port scan (12+ neutral events, 0 successes), success-after-failure
 - **Storage:** PostgreSQL with three tables — `raw_logs`, `auth_logs`, `ingest_state`
 - **LLM:** Groq `llama-3.1-8b-instant` — only called for ambiguous sessions to minimize API costs
-- **Currently learning:** wrapping the pipeline in FastAPI + Docker (see LEARNING_GUIDE.md in-repo)
+- **Deployment:** Dockerfile + docker-compose, uvicorn ASGI server
 
 **[RepoRecon](https://github.com/Ben160804/RepoRecon)** *(2026)*
 
