@@ -102,5 +102,5 @@ Tools:             Git, GitHub, Docker
 
 ---
 
-> **Currently seeking:** 2027 SWE internships in **AI infrastructure** or **backend engineering** at companies that take ML seriously.
+> **Currently seeking:** 2027 SWE internships in **AI infrastructure** or **backend engineering**.
 > Open to relocating. Let's talk: ootsodhar@gmail.com
