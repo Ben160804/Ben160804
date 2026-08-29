@@ -36,14 +36,16 @@ Built the AI layer of a resume tailoring platform. My work sat at the intersecti
 
 ### Projects
 
-**[Fac-10Sniffer](https://github.com/Ben160804/Journald-Sniffer)** *(2025 - Present)*
+**[Journald-Sniffer](https://github.com/Ben160804/Journald-Sniffer)** *(2025 - Present)*
 
-My first AI-adjacent system. FastAPI backend with six REST endpoints, containerized with Docker:
+Linux auth event ingestion and threat detection pipeline. Reads systemd journal (facility 10 — `authpriv`), parses sudo/su/sshd sessions, classifies outcomes, and alerts on suspicious patterns:
 
-- Processes **10,000+ journal log entries/day** from facility 4 and 10
-- Detects brute-force and scan patterns at **98% accuracy** using regex + statistical thresholds
-- **Groq LLaMA 3.1 fallback** for ambiguous classifications — reduced false positives by 35%
-- Taught me that production ML isn't just accuracy — it's fallback paths, observability, and graceful degradation
+- **Pipeline:** `ingestor.py` → `parser.py` → `llm.py` → `watchdogv2.py`
+- **Classification:** success / failure / suspicious / unknown via keyword matching + Groq LLM fallback for ambiguous sessions
+- **Threat detection:** brute-force (5+ failures from same IP), port scan (12+ neutral events, 0 successes), success-after-failure
+- **Storage:** PostgreSQL with three tables — `raw_logs`, `auth_logs`, `ingest_state`
+- **LLM:** Groq `llama-3.1-8b-instant` — only called for ambiguous sessions to minimize API costs
+- **Currently learning:** wrapping the pipeline in FastAPI + Docker (see LEARNING_GUIDE.md in-repo)
 
 **[RepoRecon](https://github.com/Ben160804/RepoRecon)** *(2026)*
 
