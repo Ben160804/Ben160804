@@ -28,7 +28,7 @@ Built the AI layer of a resume tailoring platform. My work sat at the intersecti
 - Scaled lead generation to **400+ companies across 5 countries**, enriching **10,000+ contacts** via Tomba and Cleanlist APIs — 3x prospecting efficiency
 - Wrote a **Python transformation layer** handling 50+ API payloads/day at 99.9% data integrity, supporting multi-step workflow orchestration
 - Integrated **Gemini with guardrail prompts** to generate structured outputs for 100+ job descriptions/month, reducing human review by 40%
-- Automated ADP job-application workflows with **TaskMagic**, saving ~6 hours/week of manual work
+- Built automated job-application workflows using **Zerowork**, saving ~6 hours/week of manual work
 
 **Key realization from this role:** shipping AI features isn't about the model — it's about the pipeline around it. Data integrity, prompt guardrails, fallback logic, and observability matter more than the LLM itself.
 
